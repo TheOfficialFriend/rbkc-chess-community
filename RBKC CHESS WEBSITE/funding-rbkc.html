@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funding Opportunities — RBKC | IGN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f1ed;
+            color: #2d4a3e;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            background-color: #f5f1ed;
+        }
+
+        nav a {
+            color: #2d4a3e;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0 20px;
+            transition: color 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+            border-bottom: 2px solid #d4af37;
+        }
+
+        nav a.active {
+            color: #d4af37;
+            border-bottom: 2px solid #d4af37;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 40px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 40px;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            font-weight: 600;
+            color: #2d4a3e;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #d4af37;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .page-subtitle {
+            font-size: 16px;
+            color: #2d4a3e;
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        .introduction {
+            background-color: #f9f7f4;
+            padding: 30px;
+            border-left: 4px solid #d4af37;
+            margin: 40px 0;
+            border-radius: 4px;
+        }
+
+        .introduction p {
+            font-size: 16px;
+            line-height: 1.9;
+            color: #2d4a3e;
+        }
+
+        .funding-card {
+            background-color: #ffffff;
+            border: 2px solid #d4af37;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+
+        .funding-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: #2d4a3e;
+            margin-bottom: 20px;
+        }
+
+        .funding-detail {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+
+        .funding-label {
+            font-weight: 600;
+            color: #2d4a3e;
+            min-width: 120px;
+            margin-right: 20px;
+        }
+
+        .funding-value {
+            color: #2d4a3e;
+            flex: 1;
+        }
+
+        .apply-button {
+            display: inline-block;
+            background-color: #d4af37;
+            color: #2d4a3e;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .apply-button:hover {
+            background-color: #2d4a3e;
+            color: #d4af37;
+        }
+
+        .cta-section {
+            background-color: #2d4a3e;
+            color: #f5f1ed;
+            padding: 50px 40px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .cta-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            color: #d4af37;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            color: #f5f1ed;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #d4af37;
+            color: #2d4a3e;
+            padding: 14px 40px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #f5f1ed;
+            color: #2d4a3e;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 2px solid #d4af37;
+            margin-top: 80px;
+            color: #2d4a3e;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 0;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .funding-card {
+                padding: 25px;
+            }
+
+            .funding-detail {
+                flex-direction: column;
+            }
+
+            .funding-label {
+                min-width: auto;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="funding-rbkc.html" class="active">Funding Opportunities</a>
+    </nav>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663432889023/kSziNY2Xfrg9u7fWWJKw2K/ign_heraldic_logo-bod2eH34vg43CyPJZUQpG8.webp" alt="IGN Logo">
+            </div>
+            <h1>Funding Opportunities</h1>
+            <p class="subtitle">Kensington & Chelsea</p>
+            <p class="page-subtitle">IGN identifies and shares funding opportunities for community groups, voluntary organisations and social enterprises in the Royal Borough of Kensington and Chelsea.</p>
+        </header>
+
+        <div class="introduction">
+            <p>If you run a community project in RBKC — no matter how big or small — there is funding available to help you grow. IGN brings these opportunities together so no community misses out.</p>
+        </div>
+
+        <div class="funding-card">
+            <h3>RBKC Voluntary Sector Support Fund</h3>
+            
+            <div class="funding-detail">
+                <span class="funding-label">Who it is for:</span>
+                <span class="funding-value">Volunteer and community organisations in Kensington and Chelsea that help improve the lives of local residents</span>
+            </div>
+
+            <div class="funding-detail">
+                <span class="funding-label">Grant size:</span>
+                <span class="funding-value">Various sizes available</span>
+            </div>
+
+            <div class="funding-detail">
+                <span class="funding-label">Deadline:</span>
+                <span class="funding-value">Thursday 30 April 2026</span>
+            </div>
+
+            <a href="https://orlo.uk/I7qnV" class="apply-button" target="_blank">Apply here</a>
+        </div>
+
+        <div class="cta-section">
+            <h2>Need help applying?</h2>
+            <p>IGN supports community organisations through the application process. You don't have to do it alone.</p>
+            <a href="https://t.me/OFF4LONDON" class="cta-button" target="_blank">Get in touch on Telegram</a>
+        </div>
+
+        <footer>
+            <p>Intelligent Growth Network — Part of the Official Friend Ecosystem</p>
+        </footer>
+    </div>
+</body>
+</html>

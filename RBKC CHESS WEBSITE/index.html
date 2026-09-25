@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGN — Intelligent Growth Network</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f1ed;
+            color: #2d4a3e;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 40px;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+        }
+
+        nav a {
+            color: #2d4a3e;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0 20px;
+            transition: color 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+            border-bottom: 2px solid #d4af37;
+        }
+
+        nav a.active {
+            color: #d4af37;
+            border-bottom: 2px solid #d4af37;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 80px;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 40px;
+        }
+
+        .logo {
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            font-weight: 600;
+            color: #2d4a3e;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #d4af37;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 600;
+            color: #2d4a3e;
+            margin-bottom: 20px;
+            border-left: 4px solid #d4af37;
+            padding-left: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.9;
+            color: #2d4a3e;
+            margin-bottom: 15px;
+        }
+
+        .contact-section {
+            background-color: #2d4a3e;
+            color: #f5f1ed;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .contact-section h2 {
+            color: #d4af37;
+            border-left: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+
+        .contact-section p {
+            color: #f5f1ed;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .contact-link {
+            display: inline-block;
+            background-color: #d4af37;
+            color: #2d4a3e;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-link:hover {
+            background-color: #f5f1ed;
+            color: #2d4a3e;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 2px solid #d4af37;
+            margin-top: 80px;
+            color: #2d4a3e;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 0;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="funding-rbkc.html">Funding Opportunities</a>
+    </nav>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663432889023/kSziNY2Xfrg9u7fWWJKw2K/ign_heraldic_logo-bod2eH34vg43CyPJZUQpG8.webp" alt="IGN Logo">
+            </div>
+            <h1>IGN</h1>
+            <p class="subtitle">Intelligent Growth Network</p>
+        </header>
+
+        <section>
+            <h2>What we are</h2>
+            <p>IGN is a network of community leaders across London. We come together to share resources, identify funding opportunities and support each other to grow. No hierarchy. No gatekeeping. Just communities working together.</p>
+        </section>
+
+        <section>
+            <h2>What we believe</h2>
+            <p>Communities should not have to compete for resources. When they collaborate, everyone benefits. IGN exists to make that collaboration possible.</p>
+        </section>
+
+        <section>
+            <h2>How it works</h2>
+            <p>Community leaders join the network. We share funding opportunities, build joint proposals and distribute resources fairly based on contribution. Every leader who delivers work through IGN gets paid.</p>
+        </section>
+
+        <section>
+            <h2>Who is it for</h2>
+            <p>Anyone who runs a community, leads a group or has skills and networks that could benefit others in London. Chess clubs, yoga communities, sports programmes, language exchanges, neighbourhood networks — all welcome.</p>
+        </section>
+
+        <div class="contact-section">
+            <h2>Want to know more?</h2>
+            <p>No forms. No commitments. Just a conversation.</p>
+            <a href="https://t.me/OFF4LONDON" class="contact-link">Get in touch on Telegram</a>
+        </div>
+
+        <footer>
+            <p>Intelligent Growth Network — Part of the Official Friend Ecosystem</p>
+        </footer>
+    </div>
+</body>
+</html>
