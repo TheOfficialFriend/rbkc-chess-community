@@ -13,21 +13,9 @@ const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663428441773/CHgiA
 
 const PARTNERS = [
   {
-    name: "Chelsea Library",
-    address: "363 Kings Road, SW3 5ES",
-    day: "Thursdays 5:30–6:30pm",
-    img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663428441773/CHgiAcrswzhYs7oY5fx6vF/chess6_0d6e0217.jpg",
-  },
-  {
-    name: "Brompton Library",
-    address: "Old Brompton Road, SW5 0DQ",
-    day: "Regular sessions",
-    img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663428441773/CHgiAcrswzhYs7oY5fx6vF/chess7_d6332ac3.jpg",
-  },
-  {
-    name: "Earls Court Community Centre",
-    address: "Earls Court Road, W8 6EJ",
-    day: "Active programming",
+    name: "Earls Court Community Hub",
+    address: "Earls Court Road, SW5 9QJ",
+    day: "Regular weekly sessions & programming",
     img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663428441773/CHgiAcrswzhYs7oY5fx6vF/chess3_781b7bb6.jpeg",
   },
 ];
@@ -35,7 +23,7 @@ const PARTNERS = [
 const STATS = [
   { icon: Users, label: "Active Members", value: "150+" },
   { icon: Trophy, label: "Matches Played", value: "500+" },
-  { icon: MapPin, label: "Partner Venues", value: "3" },
+  { icon: MapPin, label: "Primary Hub", value: "1" },
   { icon: Calendar, label: "Events This Year", value: "50+" },
 ];
 
@@ -80,7 +68,7 @@ export default function Home() {
             </h1>
 
             <p className="text-lg text-white/85 leading-relaxed mb-8 max-w-xl">
-              Join London's most inclusive chess community. Find opponents nearby, challenge players to money matches, attend club sessions, and be part of a growing movement across RBKC.
+              Join London's most inclusive chess community at our primary home at the Earls Court Community Hub. Attend club sessions, play over the board, and be part of a growing movement across RBKC.
             </p>
 
             <div className="flex flex-wrap gap-3">
@@ -142,7 +130,7 @@ export default function Home() {
                 Chess Without Boundaries
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                RBKC Chess Community is an officially consolidated chess club established in 2024. Unlike traditional clubs, we operate without a fixed physical location — our members meet at designated venues announced online, bringing chess to the heart of the community.
+                RBKC Chess Community is an officially consolidated chess club established in 2024, operating primarily out of the Earls Court Community Hub to bring chess directly to the heart of the community.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 Our mission is to promote chess education and create inclusive spaces where people of all ages and skill levels can enjoy the game. From complete beginners to experienced players, everyone is welcome at the board.
@@ -150,11 +138,11 @@ export default function Home() {
               <div className="flex items-center gap-3">
                 <img
                   src={LOGO_URL}
-                  alt="Leonel Hapi"
+                  alt="Leonel Mbaho"
                   className="h-12 w-12 rounded-full object-cover ring-2 ring-primary/20"
                 />
                 <div>
-                  <div className="font-semibold text-primary">Leonel Hapi</div>
+                  <div className="font-semibold text-primary">Leonel Mbaho</div>
                   <div className="text-sm text-muted-foreground">Chess Coach & Founder</div>
                 </div>
               </div>
@@ -173,7 +161,7 @@ export default function Home() {
               />
               <img
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663428441773/CHgiAcrswzhYs7oY5fx6vF/chess8_5eb13e35.jpg"
-                alt="Library chess"
+                alt="Hub chess"
                 className="rounded-xl object-cover w-full h-48 shadow-md -mt-6"
               />
               <img
@@ -186,22 +174,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Partner Venues ───────────────────────────────────────────────── */}
+      {/* ── Partner Venue / Hub ───────────────────────────────────────────── */}
       <section className="py-20 bg-muted/50 chess-pattern">
         <div className="container">
           <div className="text-center mb-12">
             <Badge className="bg-secondary/20 text-secondary-foreground border-secondary/30 mb-4">
-              Our Venues
+              Our Venue
             </Badge>
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-primary">
-              Where We Play
+              Earls Court Community Hub
             </h2>
             <p className="text-muted-foreground mt-3 max-w-xl mx-auto">
-              We partner with community venues across RBKC to bring chess to every neighbourhood.
+              Our primary operational home hosting weekly chess sessions and community programming.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="max-w-md mx-auto">
             {PARTNERS.map((partner) => (
               <Card key={partner.name} className="overflow-hidden hover:shadow-lg transition-shadow group">
                 <div className="relative h-48 overflow-hidden">
@@ -334,7 +322,7 @@ export default function Home() {
             Ready to Play?
           </h2>
           <p className="text-white/80 max-w-xl mx-auto mb-8 text-lg">
-            Join the RBKC Chess Community today. Find opponents, attend events, and be part of London's most welcoming chess family.
+            Join the RBKC Chess Community today. Find opponents, attend events at the Earls Court Community Hub, and be part of London's most welcoming chess family.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link href="/matchmaker">
@@ -343,9 +331,9 @@ export default function Home() {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
-            <Link href="/membership">
+            <Link href="/events">
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary bg-transparent font-semibold">
-                Become a Member
+                View Upcoming Events
               </Button>
             </Link>
           </div>
